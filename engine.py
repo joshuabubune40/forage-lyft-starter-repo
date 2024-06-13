@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 
-
-class Car(ABC):
+class Engine(ABC):
     @abstractmethod
     def needs_service(self):
         pass
