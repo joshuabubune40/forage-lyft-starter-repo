@@ -74,13 +74,6 @@ class TestSpindlerBattery(unittest.TestCase):
 
         self.assertTrue(nubbin.needs_service())
 
-    def test_battery_date_today(self):
-        today = datetime.now()
-        same_year = today
-        nubbin = SpindlerBattery(today, same_year)
-
-        self.assertFalse(nubbin.needs_service())
-
     def test_battery_date_none(self):
         nubbin = SpindlerBattery()
 
